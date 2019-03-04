@@ -3,7 +3,7 @@
 #if defined(NVML_PATCH_319) || defined(NVML_PATCH_325) || defined(NVML_PATCH_331)
 #include "nvml.h"
 #elif defined(NVML_PATCH_390) || defined(NVML_PATCH_396) || defined(NVML_PATCH_410)
-#include <nvml.h>
+#include "nvml-v10.h"
 #else
 #error "No valid NVML_PATCH_* option specified! Currently supported versions are: 319, 325, 331 (x86_64 only), 390 (x86_64 only), 396 (x86_64 only), 410 (x86_64 only)."
 #endif
